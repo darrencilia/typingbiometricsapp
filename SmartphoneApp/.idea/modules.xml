@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01 - TypingApp.iml" filepath="$PROJECT_DIR$/01 - TypingApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customkeyboard/customkeyboard.iml" filepath="$PROJECT_DIR$/customkeyboard/customkeyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/typingapp/typingapp.iml" filepath="$PROJECT_DIR$/typingapp/typingapp.iml" />
+    </modules>
+  </component>
+</project>

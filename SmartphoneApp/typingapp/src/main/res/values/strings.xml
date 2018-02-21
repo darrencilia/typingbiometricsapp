@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Typing Biometrics App</string>
+    <string name="ime_name">Biometrics Keyboard</string>
+</resources>

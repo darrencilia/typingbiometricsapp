@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/typappback_hdpi"
+    tools:context="org.mcast.dc.typingapp.MainActivity">
+
+    <Button
+        android:background="@drawable/bluebutton"
+        style="@style/ButtonText"
+        android:width="@dimen/button_width"
+        android:layout_marginTop="60dp"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="ClickRegister"
+        android:id="@+id/btnRegister" />
+
+    <Button
+        android:background="@drawable/bluebutton"
+        style="@style/ButtonText"
+        android:width="@dimen/button_width"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="Users List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="ClickUsers"
+        android:id="@+id/btnUsersList"
+        android:layout_below="@+id/btnRegister"/>
+
+    <Button
+        android:background="@drawable/bluebutton"
+        style="@style/ButtonText"
+        android:width="@dimen/button_width"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="Training"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="ClickTraining"
+        android:id="@+id/btnTraining"
+        android:layout_below="@+id/btnUsersList"/>
+
+    <Button
+        android:background="@drawable/bluebutton"
+        style="@style/ButtonText"
+        android:width="@dimen/button_width"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="Testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="ClickTesting"
+        android:id="@+id/btnTesting"
+        android:layout_below="@+id/btnTraining"/>
+
+    <Button
+        android:background="@drawable/bluebutton"
+        style="@style/ButtonText"
+        android:width="@dimen/button_width"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="ClickFeedback"
+        android:id="@+id/btnFeedback"
+        android:layout_below="@+id/btnTesting"/>
+
+    <Button
+        android:background="@drawable/bluebutton"
+        style="@style/ButtonText"
+        android:width="@dimen/button_width"
+        android:layout_marginTop="@dimen/button_top_margin"
+        android:text="Debug Touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="ClickDebugTouch"
+        android:id="@+id/btnDebugTouch"
+        android:layout_below="@+id/btnFeedback"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" >
+
+        <TextView
+            android:text="User: N/A"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCurrentUser" />
+    </LinearLayout>
+
+
+</RelativeLayout>

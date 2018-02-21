@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <!-- Feedback Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip">
+
+            <!-- Feedback  -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:textSize="16sp"
+                android:id="@+id/tv_feed1"
+                android:text="How comfortable was your grip on the mobile device while typing?\n(5 being most comfortable)"/>
+
+            <RadioGroup
+                android:id="@+id/radioFeed1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/tv_feed1"
+                >
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed1_1"
+                    android:checked="true"
+                    android:text="1"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed1_2"
+                    android:text="2"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed1_3"
+                    android:text="3"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed1_4"
+                    android:text="4"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed1_5"
+                    android:text="5"
+                    />
+
+            </RadioGroup>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioFeed1"
+                android:textColor="#372c24"
+                android:textSize="16sp"
+                android:id="@+id/tv_feed2"
+                android:text="How similar was the keyboard layout to what you usually use?\n(5 being most similar)"/>
+            <RadioGroup
+                android:id="@+id/radioFeed2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/tv_feed2"
+                >
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed2_1"
+                    android:checked="true"
+                    android:text="1"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed2_2"
+                    android:text="2"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed2_3"
+                    android:text="3"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed2_4"
+                    android:text="4"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed2_5"
+                    android:text="5"
+                    />
+            </RadioGroup>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioFeed2"
+                android:textColor="#372c24"
+                android:textSize="16sp"
+                android:id="@+id/tv_feed3"
+                android:text="Do you usually type with your phone in a vertical or horizontal orientation?"/>
+            <RadioGroup
+                android:id="@+id/radioFeed3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/tv_feed3"
+                >
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed3_1"
+                    android:checked="true"
+                    android:text="Vertical"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed3_2"
+                    android:text="Horizontal"
+                    />
+
+            </RadioGroup>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioFeed3"
+                android:textColor="#372c24"
+                android:textSize="16sp"
+                android:id="@+id/tv_feed4"
+                android:text="How easy were the typing sentences to remember at one go?\n(5 being very easy)"/>
+            <RadioGroup
+                android:id="@+id/radioFeed4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/tv_feed4"
+                >
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed4_1"
+                    android:checked="true"
+                    android:text="1"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed4_2"
+                    android:text="2"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed4_3"
+                    android:text="3"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed4_4"
+                    android:text="4"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed4_5"
+                    android:text="5"
+                    />
+            </RadioGroup>
+
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioFeed4"
+                android:textColor="#372c24"
+                android:textSize="16sp"
+                android:id="@+id/tv_feed5"
+                android:text="After how many typing sessions did you start feeling tired (if applicable)?"/>
+            <RadioGroup
+                android:id="@+id/radioFeed5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip"
+                android:layout_below="@+id/tv_feed5"
+                >
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed5_1"
+                    android:checked="true"
+                    android:text="1"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed5_2"
+                    android:text="2"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed5_3"
+                    android:text="3"
+                    />
+
+                <RadioButton
+                    style="@style/FeedbacRadioBtn"
+                    android:id="@+id/radioFeed5_4"
+                    android:text="4"
+                    />
+            </RadioGroup>
+
+            <!-- Other feedback -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:textSize="16sp"
+                android:layout_below="@id/radioFeed5"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_feedOther"
+                android:text="Any other feedback"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/tv_feedOther"
+                android:id="@+id/et_feedOther" />
+
+            <!-- Submit feedback -->
+            <Button
+                android:background="@drawable/bluebutton"
+                style="@style/ButtonText"
+                android:id="@+id/btnSubmitFeedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_feedOther"
+                android:layout_marginTop="10dip"
+                android:text="Submit Feedback"
+                android:onClick="ClickSubmitFeedback" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

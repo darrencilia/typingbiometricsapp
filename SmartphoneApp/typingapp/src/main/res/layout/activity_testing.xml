@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_testing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.mcast.dc.typingapp.TestingActivity">
+
+
+    <!--  Accuracy meter -->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:id="@+id/et_testing"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="there was a wild fox in the forest"
+        android:layout_width="wrap_content"
+        android:textSize="46px"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_testing"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_testsentence"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Classified As:"
+        android:layout_width="wrap_content"
+        android:textSize="42px"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/fl_camera"
+        android:layout_below="@+id/radioClassMode"
+        android:paddingTop="20dp"
+        android:id="@+id/tv_classLabel" />
+
+    <TextView
+        android:text="......"
+        android:layout_width="wrap_content"
+        android:textSize="64px"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_classLabel"
+        android:layout_toEndOf="@+id/fl_camera"
+        android:id="@+id/tv_classresult" />
+
+    <TextView
+        android:text="Handidness"
+        android:layout_width="wrap_content"
+        android:textSize="42px"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/fl_camera"
+        android:paddingTop="20dp"
+        android:id="@+id/tv_classRadioLabel" />
+
+    <RadioGroup
+        android:id="@+id/radioClassMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_toEndOf="@+id/fl_camera"
+        android:layout_below="@+id/tv_classRadioLabel"
+        >
+
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/radioClassMode1"
+            android:checked="false"
+            android:textSize="38px"
+            android:text="One"
+            />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/radioClassMode2"
+            android:checked="true"
+            android:textSize="38px"
+            android:text="Two"
+            />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_camera"
+        android:layout_marginRight="10dp"
+        android:layout_width="180dp"
+        android:layout_height="220dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <SurfaceView
+            android:id="@+id/sv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>
